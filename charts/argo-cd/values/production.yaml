@@ -1,0 +1,13 @@
+secrets:
+  create: false
+
+serviceAccount: &serviceAccount arn:aws:iam::115216742450:role/eks-poc-argocd-role
+
+argo-cd:
+  image:
+    tag: v2.1.2
+    pullPolicy: IfNotPresent
+
+  service:
+    #type: ClusterIP
+    type: LoadBalancer
