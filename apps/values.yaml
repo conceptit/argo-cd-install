@@ -1,1 +1,7 @@
+argo-cd:
+  global:
+    image:
+      tag: v2.1.7
+  dex:
+    enabled: false
 
