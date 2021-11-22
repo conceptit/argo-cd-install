@@ -5,7 +5,7 @@ serviceAccount: &serviceAccount arn:aws:iam::115216742450:role/eks-poc-argocd-ro
 
 argo-cd:
   image:
-    tag: v2.1.6
+    tag: v2.1.7
     pullPolicy: IfNotPresent
 
   service:
