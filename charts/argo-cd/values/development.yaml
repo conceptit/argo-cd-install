@@ -8,5 +8,5 @@ argo-cd:
     pullPolicy: IfNotPresent
 
   service:
-    #type: ClusterIP
-    type: LoadBalancer
+    type: ClusterIP
+    
