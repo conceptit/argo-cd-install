@@ -1,12 +1,14 @@
-secrets:
-  create: false
-
-serviceAccount: &serviceAccount arn:aws:iam::115216742450:role/eks-poc-argocd-role
-
 argo-cd:
-  image:
-    pullPolicy: IfNotPresent
+  server:
+    ingress:
+      enabled: true
+      hosts:
+      - argocd.andrzejpioro.com
+      annotations:
+        foo: bar
+        aaa: ccc
+    extraArgs:
+    - --insecure
 
-  service:
-    type: ClusterIP
+  
     
