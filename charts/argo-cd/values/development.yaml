@@ -5,6 +5,7 @@ argo-cd:
       hosts:
       - argocd.andrzejpioro.com
       annotations:
+        kubernetes.io/ingress.class: alb
         alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-1:115216742450:certificate/528b6509-9d59-4e5c-85d6-990ff4fb211b
         alb.ingress.kubernetes.io/group.name: my-group
         alb.ingress.kubernetes.io/healthcheck-path: /healthz
