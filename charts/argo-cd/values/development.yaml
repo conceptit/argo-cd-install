@@ -1,5 +1,7 @@
 argo-cd:
   server:
+    config:
+      url: https://argocd.andrzejpioro.com
     ingress:
       enabled: true
       hosts:
